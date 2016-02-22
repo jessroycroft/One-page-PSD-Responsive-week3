@@ -1,0 +1,82 @@
+
+section.gallery {
+	background: $dark;
+
+}
+.episode {
+	width: calc(50% - 16px);
+	background-size: cover;
+	background-position: center;
+	padding: 3%;
+	@media (max-width: 620px) {
+		width: 100%;
+	}
+	.details {
+		justify-content: space-between;
+	}
+	.date {
+		color: white;
+		padding-bottom: 20px;
+	}
+	a {
+		color: $accent;
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+section.gallery .episode {
+	margin: 8px;
+}
+
+.gallery-episode1 {
+	background-image: url(../assets/podcast-1.jpg);
+}
+
+.gallery-episode2 {
+	background-image: url(../assets/podcast-2.jpg);
+}
+
+.gallery-episode3 {
+	background-image: url(../assets/podcast-3.jpg);
+}
+
+.gallery-episode4 {
+	background-image: url(../assets/podcast-4.jpg);
+}
+
+.gallery-episode5 {
+	background-image: url(../assets/podcast-5.jpg);
+}
+
+.gallery-episode6 {
+	background-image: url(../assets/podcast-6.jpg);
+}
+
+.gallery-episode7 {
+	background-image: url(../assets/podcast-1.jpg);
+}
+
+.gallery-episode8 {
+	background-image: url(../assets/podcast-2.jpg);
+}
+
+// Load More Button
+
+.load-more-button {
+	background: rgba(255, 255, 255, 0.13);
+	width: 100%;
+	border-radius: 0;
+	margin: 20px 8px 40px 8px;
+	padding: 10px;
+	a {
+		color: white;
+		font-size: 1.4rem;
+	}
+}
+
+.load-more-ep {
+	display: none;
+}
+

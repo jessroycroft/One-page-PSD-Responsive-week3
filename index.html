@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poppins:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Podcast</title>
+</head>
+<body>
+
+<header class="splash-image" id="home">
+	<div class="wrapper flex-column top-bar"> <!-- wrapper for nav and logo -->
+		<div class="logo-wrapper">
+			<img src="assets/logo.png" alt="Soundbyte logo, green">
+		</div>
+		<nav class="header-nav">
+			<ul class="flex-row">
+				<li>
+					<a href="#home">Home</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#episodes">Episodes</a>
+				</li>
+				<li>
+					<a href="#">News</a>
+				</li>
+				<li>
+					<a href="#">Shop</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li class="side-nav-item">
+					<a href="#donate">Donate</a>
+				</li>
+			</ul>
+		
+			<a class="hamburger header-hamburger" href="#"><i class="fa fa-bars"></i></a>
+		</nav>  <!-- End of hamburger nav -->
+	</div> <!-- /wrapper for nav and logo -->
+	<div class="line header-line"></div>
+
+	<div class="wrapper flex-column"> <!-- wrapper for text sections -->
+		<div class="center flex-row">
+			<div class="info-wrapper">
+				<p>A podcast about tacos and Disney World by <span>Drew Minns.</span></p>
+				<p class="accent-text">Live Broadcast Wednesday @ 9pm ET</p>
+				<div class="line"></div>
+				<ul class="media flex-row icons-container">
+					<li>
+						<a class="button subscribe-button" href="#">Subscribe</a>
+					</li>
+				
+					<ul class="media flex-row header-icons">
+						<li>
+							<a href="#">
+								<i class="fa fa-rss"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-apple"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-soundcloud"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+					</ul>
+				</ul>
+			</div>
+			<article class="episode header-episode">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 53: Artist Corner With Justin</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sit esse, id recusandae numquam consequatur dolores! Dicta accusantium voluptatem accusamus est optio tenetur nostrum quas deleniti exercitationem, ducimus, aspernatur, quia.</p>
+			</article>
+		</div>
+	</div> <!-- /wrapper for text sections -->
+	
+</header>
+
+<!-- Sound bar -->
+<section class="soundbar flex-row">
+		<audio src="assets/love-yourself.mp3" preload="auto"></audio>
+		<div class="volume"></div>
+</section>
+
+<section class="gallery" id="episodes">
+
+	<div class="wrapper"> <!-- wrapper for episode gallery -->
+		<nav class="gallery-nav">
+			<ul class="flex-row">
+				<li>
+					<a href="#browse" id="browse">Browse Episodes</a>
+				</li>
+				<li>
+					<a href="#all" id="all"><span>All</span></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="flex-row">
+
+			<article class="episode gallery-episode1">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 52: Chipotle Peppers</h3>
+				<p class="details date">October 11,2015</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+			<article class="episode gallery-episode2">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 51: Space Mountain vs The Teacups</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+
+			</article>
+			<article class="episode gallery-episode3">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 50: In Which Drew Eats 10 Tacos</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+			<article class="episode gallery-episode4">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 49: The Time I Met Dug At Disney World</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>>
+			</article>
+			<article class="episode gallery-episode5">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 48: The Best Tacos At Disney World</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+			<article class="episode gallery-episode6">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 47: Interview With A Taco Artist</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+		
+			<article class="episode gallery-episode7 load-more-ep">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 46: More Tacos</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+			<article class="episode gallery-episode8 load-more-ep">
+				<div class="line"></div>
+				<div class="details flex-row">
+					<p>Season 3</p>
+					<p>
+						<i class="fa fa-clock-o"></i> 59 mins
+					</p>
+				</div>
+				<h3>Episode 45: Return to Space Mountain</h3>
+				<p class="details date">October 11,2016</p>
+				<div class="button play-episode-button">
+					<a href="#"><i class="fa fa-play"></i> Play episode</a>
+				</div>
+			</article>
+		</div>
+	
+		<div class="button load-more-button">
+			<a href="#" class="load-more">Load More</a>
+		</div>
+	</div> 
+</section> <!-- /wrapper for episode gallery -->
+
+<section class="about" id="about">
+	<div class="wrapper flex-column">
+		<h2>About Us</h2>
+		
+		<article class="bio bio1 flex-row">
+			<div class="image-wrapper">
+				<img src="assets/about-1.jpg" alt="Woman in sunglasses with American flag behind">
+			</div>
+			<div class="bio-text">
+				<div class="line standard-line"></div>
+				<h5 class="name">Drew Minns</h5>
+				<p class="position">Designer/Developer</p>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque expedita quaerat blanditiis recusandae, nihil, eius aliquam corporis minus doloribus laudantium! Dicta quia quam, beatae minus amet vel labore modi provident.</p>
+				<ul class="social flex-row right-align">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+		<div class="line alt-line"></div>
+		<article class="bio bio2 flex-row">
+			<div class="image-wrapper">
+				<img src="assets/about-2.jpg" alt="Man holding up a camera with high-rise buildings behind">
+			</div>
+			<div class="bio-text">
+				<div class="line standard-line"></div>
+				<h5 class="name">Vic Vinegar</h5>
+				<p class="position">Designer/Developer</p>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque expedita quaerat blanditiis recusandae, nihil, eius aliquam corporis minus doloribus laudantium! Dicta quia quam, beatae minus amet vel labore modi provident.</p>
+				<ul class="social flex-row">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+
+</section>
+
+<section class="support" id="donate">
+	<div class="wrapper flex-column">
+		<h2>Support the Show</h2>
+		<p class="accent-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis omnis, dolores aut, ex fuga aliquam mollitia quidem eius, nisi rerum voluptatibus eaque fugit officia. Adipisci tenetur quasi atque odit ipsum.</p>
+		<div class="donate-background flex-column"><p class="donate-big">Donate</p></div>
+		<a href="#" class="button donation-button">Make a Donation</a>
+	</div>
+</section>
+			
+<section class="contents">
+	<div class="wrapper flex-row">
+		<div class="content-list flex-column">
+			<div class="line"></div>
+			<p>Seasons <a href="#" class="read-more read-more1"><i class="fa fa-caret-down"></i></a></p>
+
+			<ul class="seasons">
+				<li><a href="#">Season 3</a></li>
+				<li><a href="#">Season 2</a></li>
+				<li><a href="#">Season 1</a></li>
+			</ul>
+		</div>
+
+		<div class="content-list flex-column">
+			<div class="line"></div>
+			<p>Archives <a href="#" class="read-more read-more2"><i class="fa fa-caret-down"></i></a></p>
+			<ul class="archives">
+				<li><a href="#">October 2015<span> (2)</span></a></li>
+				<li><a href="#">September 2015<span> (3)</span></a></li>
+				<li><a href="#">August 2015<span> (2)</span></a></li>
+			</ul>
+		</div>
+		
+		<div class="content-list flex-column">
+			<div class="line"></div>
+			<p>Latest News <a href="#" class="read-more read-more3"><i class="fa fa-caret-down"></i></a></p>
+			<ul class="news">
+				<li><a href="#">Designing Websites for All Devices
+				<p><span> Nov 4,2015</span></p>
+				</a></li>
+				<li><a href="#">News Guests Announced for November
+				<p><span> Nov 4,2015</span></p>
+				</a></li>
+				<li><a href="#">Designing Websites for All Devices
+				<p><span> Nov 4, 2015</span></p>
+				</a></li>
+			</ul>
+		</div>
+
+		<div class="content-list flex-column">
+			<div class="line"></div>
+			<p>Follow Us <a href="#" class="read-more read-more4"><i class="fa fa-caret-down"></i></a></p>
+			<ul class="follow">
+				<li class="flex-row devs">
+					<div class="names flex-column">
+						<p class="name">Drew Minns</p>
+						<p class="position"><span>Designer / Developer</span></p>
+					</div>
+
+					<div class="follow-us-icons">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+				
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</div>
+				</li>
+				
+				<li class="flex-row devs">
+					<div class="names flex-column">
+						<p class="name">Vic Vinegar</p>
+						<p class="position"><span>Designer / Developer</span></p>
+					</div>
+					
+					<div class="follow-us-icons">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>	
+</section>
+
+<footer>
+	<div class="wrapper flex-row">
+		<ul class="icons flex-row">
+			<li>
+				<a href="#">
+					<i class="fa fa-rss"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-apple"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-soundcloud"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="center-wrapper flex-column">
+			<div class="logo-wrapper">
+				<img src="assets/logo-white.png" alt="Soundbyte logo, white">
+			</div>
+			<p>C2015 Developed by HackerYou</p>
+		</div>
+		<nav>
+			<ul class="flex-row footer-nav">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Episodes</a>
+				</li>
+				<li>
+					<a href="#">News</a>
+				</li>
+				<li>
+					<a href="#">Shop</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+			<a href="#home" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+		</nav>
+	</div>
+
+</footer>
+
+</div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/audiojs/audiojs/audio.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Credits:
+Icons from http://fontawesome.io
+Sound bar from http://kolber.github.io/audiojs/
+ -->
+</body>
+</html>

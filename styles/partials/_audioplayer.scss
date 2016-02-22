@@ -1,0 +1,68 @@
+.soundbar {
+	background: black;
+	width: 100%;
+	justify-content: center;
+}
+
+
+audio {
+	background: black;
+}
+
+audio::-webkit-media-controls-play-button {
+	background-image: url("../assets/play.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.audiojs {
+	width: 498px;
+	height: 36px;
+	background: black;
+	font-family: 'Roboto', sans-serif;
+
+	.time {
+		color: $accent;
+		em {
+			color: $accent;
+			position: relative;
+			right: 358px;
+		}
+		strong {
+			position: relative;
+			right: 52px;
+		}
+	}
+}
+
+.audiojs .play-pause {
+	width: 48px;
+	height: 34px;
+	padding: 8px 19px;
+	margin: 2px;
+	border-right: 1px solid lighten($dark-fade, 10%);
+	border-left: 1px solid lighten($dark-fade, 10%);
+}
+
+.audiojs .scrubber {
+	height: 3px;
+	margin: 17px;
+	margin-left: 55px;
+	@media (max-width: 501px) {
+		display: none;
+	}
+}
+
+.volume {
+	width: 48px;
+	padding: 8px 11px;
+	height: 34px;
+	background-image: url("../assets/volume.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-right: 1px solid lighten($dark-fade, 10%);
+	border-left: 1px solid lighten($dark-fade, 10%);
+	@media (max-width: 545px) {
+		display: none;
+	}
+}

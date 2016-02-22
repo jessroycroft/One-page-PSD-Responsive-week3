@@ -1,0 +1,48 @@
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 40px;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.button {
+	font-family: 'Poppins';
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 1.5px;
+	width: 153px;
+	padding: 5px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.play-episode-button {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.4s;
+	&:hover {
+		color: $accent;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+

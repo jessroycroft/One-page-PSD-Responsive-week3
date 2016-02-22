@@ -1,0 +1,168 @@
+// Categories, Archives, etc.
+
+section.contents {
+	background: $dark;
+	color: white;
+	a {
+		color: white;
+	}
+}
+
+.content-list {
+	width: 25%;
+	padding: 10px;
+	@media (max-width: 745px) {
+		width: 50%;
+	}
+	@media (max-width: 550px) {
+		width: 100%;
+	}
+	li {
+		padding: 5px 0;
+		border-bottom: 1px solid rgba(120,120,120,0.5);
+		justify-content: space-between;
+		@media (max-width: 745px) {
+			border-bottom: none;
+		}
+		.position {
+			font-size: 1rem;
+			line-height: 2;
+		}
+		.names {
+			padding-right: 33px;
+			.name {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+.content-list .news li {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.content-list li.devs:last-child {
+	border-bottom: none;
+}
+
+.content-list p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	letter-spacing: 2px;
+	padding-top: 10px;
+}
+
+.content-list li {
+	font-size: 1.4rem;
+}
+
+.content-list span {
+	color: $light-fade;
+}
+
+a.read-more {
+	font-size: 1.8rem;
+}
+
+// Media queries for mobile-size drop-downs
+
+@media (min-width: 551px) {
+	a.read-more {
+		display: none;
+	}
+}
+@media (max-width: 550px){
+	.content-list ul {
+		display: none;
+		a.read-more {
+			display: block;
+		}
+	}
+}
+
+
+// Footer
+
+footer {
+	background: $dark;
+	.wrapper {
+		
+		& > * {
+			flex: 1 0 30%;
+		}
+	}
+}
+
+footer .icons {
+	justify-content: space-around;
+	padding-right: 10%;
+	padding-top: 20px;
+	li a {
+		color: $light-fade;
+		font-size: 2.4rem;
+		@media (max-width: 550px) {
+			font-size: 1.5rem;
+		}
+		@media (max-width: 500px) {
+			display: none;
+		}
+	}
+}
+
+.center-wrapper {
+	align-items: center;
+	.logo-wrapper {
+		padding-bottom: 10px;
+
+	}
+	p {
+		padding-top: 10px;
+		color: $light-fade;
+	}
+
+}
+
+
+footer .footer-nav {
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 1rem;
+	@media (max-width: 920px) {
+		flex-direction: column;
+		padding: 0 0 0 20px;
+		}
+	@media (max-width: 600px) {
+		display: none;
+	}
+	li {
+		padding: 2px;
+		a {
+		color: $light-fade;
+		padding: 2px;
+		letter-spacing: 1px;
+		}
+	}
+}
+
+footer ul li a:hover {
+	color: white;
+}
+
+footer nav .back-to-top {
+	color: $light-fade;
+	font-size: 3.5rem;
+	display: none;
+	padding-left: 50px;
+	&:hover {
+		color: white;
+	}
+	@media (max-width: 600px) {
+		display: block;
+	}
+
+}
+

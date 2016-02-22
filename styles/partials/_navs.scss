@@ -1,0 +1,91 @@
+header .wrapper {
+	align-items: center;
+}
+
+// Main header nav
+.header-nav ul {
+	text-transform: uppercase;
+	li a {
+		color: white;
+		padding: 10px;
+		font-size: 1.2rem;
+	}
+	.side-nav-item {
+		margin-left: 30px;
+		border: 1px solid white;
+	}
+} // End header nav
+
+
+// Mobile Hamburger Nav
+a.hamburger {
+		color: white;
+		font-size: 3rem;
+		display: none;
+	}
+	header .header-nav ul{
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+		width: 100%;
+		li {
+			flex: 1 0 auto;
+			text-align: center;
+			a {
+				text-decoration: none;
+				color: white;
+				&:hover{
+					color: $accent;
+				}
+			}
+		}
+	}
+	
+	// Media queries for header hamburger nav
+
+	@media (max-width: 568px){
+		header .header-nav ul {
+			display: none;
+			a {
+				font-size: 2rem;
+			}
+			.side-nav-item {
+				margin-left: 0;
+				border: none;
+			}
+		}
+		a.hamburger {
+			display: block;
+			text-align: center;
+		}
+	}
+
+// Episode nav
+
+.gallery-nav ul {
+	width: 70%;
+	justify-content: space-between;
+	padding: 40px 10px;
+}
+.gallery-nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	&:focus {
+		border-bottom: 2px solid $accent;
+		outline: 0;
+	}
+	span {
+		font-size: 1.3rem;
+	}
+
+}
+
+// Subscribe button
+
+.subscribe-button {
+	background: $accent;
+	color: white;
+}
+

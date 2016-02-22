@@ -1,0 +1,21 @@
+@mixin regSize($size) {
+	font-size: $size;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin boldSize($size, $color) {
+	font-size: $size;
+	color: $color;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@mixin paragraphFont($size, $color) {
+	font-size: $size;
+	color: $color;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+

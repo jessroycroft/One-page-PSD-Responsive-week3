@@ -1,0 +1,70 @@
+// Font Styles
+
+h3 {
+	@include regSize(2.8rem);
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+}
+
+.header-episode h3 {
+	font-weight: 400;
+}
+.header-episode .description {
+	@include paragraphFont(1.8rem, $base-color);
+}
+.details {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: $accent;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+
+header nav, footer nav {
+	font-size: 1rem;
+}
+
+section h2 {
+	@include regSize(3.2rem);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h5.name {
+	@include boldSize(4.8rem, $accent);
+}
+
+p.name {
+	@include boldSize(1.8rem, $accent);
+}
+
+p.position {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.about p.position {
+	font-size: 1.6rem;
+}
+
+footer p.position {
+	font-size: 1.2rem;
+	color: light;
+}
+
+.bio .description {
+	@include paragraphFont(1.8rem, $dark-fade);
+	line-height: 1.5;
+}
+
+.social a {
+	color: $dark;
+}
+
+.support p.accent-text {
+	line-height: 1.5;
+}

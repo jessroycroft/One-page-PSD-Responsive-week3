@@ -1,0 +1,164 @@
+// Translucent Line
+
+.line {
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	background: rgba(209,209,209,0.4);
+}
+
+.info-wrapper div.line, .contents div.line {
+	height: 2px;
+}
+
+.header-line {
+	height: 1px;
+	background: rgba(209,209,209,0.2);
+}
+
+
+// Developer Bios
+
+section.about {
+	padding-bottom: 50px;
+}
+.bio {
+	width: 100%;
+	justify-content: space-between;
+	@media (max-width: 780px) {
+		flex-direction: column;
+	}
+}
+
+.image-wrapper {
+	width: 50%;
+	min-width: 200px;
+	img {
+		width: 100%;
+	}
+}
+
+.bio .bio-text {
+	width: 40%;
+	@media (max-width: 780px) {
+		width: 100%;
+	}
+	.name, .position {
+		text-align: right;
+		margin: 0;
+		padding: 10px 0;
+	}
+	.name {
+		@media (max-width: 490px) {
+			font-size: 3.5rem;
+		}
+	}
+	p {
+		text-align: right;
+	}
+	i {
+		font-size: 2.4rem;
+		padding: 0 10px;
+	}
+}
+
+.bio .bio-text ul.right-align {
+	justify-content: flex-end;
+}
+
+.bio2 {
+	padding-top: 10%;
+	.image-wrapper {
+		order: 10;
+		@media (max-width: 780px) {
+			order: -10;
+			align-self: flex-end;
+		}
+	}
+	.bio-text .name, .bio-text .position, .bio-text p {
+		text-align: left;
+	}
+	p {
+		padding: 0;
+	}
+
+}
+
+.alt-line {
+	display: none;
+}
+
+@media (max-width: 490px) {
+	.standard-line {
+		display: none;
+	}
+	.alt-line {
+		display: block;
+	}
+}
+
+
+
+// Support the Show
+
+.support {
+	background: linear-gradient(80deg, #77eb90 0%, $accent 100%); 
+
+}
+
+.support .wrapper {
+	align-items: center;
+}
+
+.support h2 {
+	color: $white;
+	@media (max-width: 407px) {
+		font-size: 3rem;
+	}
+}
+
+.support p.accent-text {
+	@include paragraphFont(1.8rem,  $white);
+	width: 50%;
+	@media (max-width: 730px) {
+		width: 70%;
+	}
+}
+
+.donation-button {
+	background: $white;
+	color: $dark;
+	position: relative;
+	z-index: 10;
+	padding: 15px;
+	margin-bottom: 50px;
+
+}
+
+	// 'Donate' background
+
+	.support .wrapper {
+		position: relative;
+	}
+	.donate-background {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		p.donate-big {
+			margin: auto;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			font-size: 17rem;
+			color: rgba(120,120,120,0.05);
+			@media (max-width: 730px) {
+				font-size: 12rem;
+			}
+			@media (max-width: 530px) {
+				font-size: 8rem;
+			}
+		}
+	}
+	
